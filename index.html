@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convocatorias</title>
+    <link rel="stylesheet" href="calls.css">
+    <script src="https://kit.fontawesome.com/7a95506370.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="#">Github jobs</a>
+    </div>
+</header>
+
+<main>
+    <div class="container-cabecera">
+        <div class="search">
+            <i class="fas fa-briefcase"></i>
+            <div class="items-search">
+                <input class="search-banner" type="search"  placeholder="Title, companies, expertise or benefits">
+                <input class="botton" type="submit"  value="Search">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-central">
+
+        <!-- Espacio para definir parametros de busqueda -->
+        <div class="parametros">
+            <label><input type="checkbox" id="mood-call" value="mood_checkbox">Full time</label>
+            <h2>LOCATION</h2>
+            <div class="location-search">
+                <i class="fas fa-globe-americas"></i>
+                <input type="search"  placeholder="City, state, zip code or country">
+            </div>
+            <div>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox">London</label><br>
+                <label><input type="checkbox" id="cbox2" value="second_checkbox"> Amsterdam</label><br>
+                <label><input type="checkbox" id="cbox3" value="three_checkbox"> New York</label><br>
+                <label><input type="checkbox" id="cbox4" value="four_checkbox"> Berlin</label><br>
+            </div>
+        </div>
+        
+        <!-- Espacio donde Aparecen los trabajos -->
+        <div class="calls">
+
+            <!-- Tarjeta -->
+            
+        </div>
+    </div>
+
+
+
+</main>
+
+
+
+<footer>
+    <div>
+        <p>Creador por <a href="#">Laura V. De Armas</a> Dev Challenge io></a></p>
+    </div>
+</footer>
+
+
+
+<template>
+    <div class="item-call"> 
+        <div class="info-company-call">
+            <div class="logo-company">
+                <img src="" alt="">
+            </div>
+            <div class="info-call">
+                <h4>Kasisto</h4>
+                <h2>Front-End Software Engineer</h2>
+                <a href="#">Full time</a>
+            </div>
+        </div>
+        <div class="data-call">
+            <i class="fas fa-globe-americas"></i>
+            <div class="location">
+                <p>New York</p>
+            </div>
+            <div class="timeline">
+                <i class="far fa-clock"></i>
+                <p>5 days ago</p>
+            </div>
+        </div>
+    </div> 
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+const getData = async () => {
+    try {
+        const response = await fetch('http://localhost:8080/api/jobs')
+    } catch (error) {
+        console.log(error)
+    }
+}
+getData()
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
+

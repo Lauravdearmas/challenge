@@ -1,0 +1,54 @@
+body {
+    background: hotpink;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 40px 150px;
+}
+
+.container-cabecera{
+    margin: 5px 150px;
+    background:khaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 120px;
+
+}
+
+.search {
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 700px;
+    align-items: center;
+    border-radius: 5px;
+}
+.search i {
+    margin: 0 20px;
+    color: rgb(185, 185, 185);
+
+}
+.items-search {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    align-items: center;
+    background: paleturquoise;
+}
+
+.botton {
+    width: 80px;
+    background: rgb(40, 104, 221);
+    height: 40px;
+    border-radius: 5px;
+   color: white;
+   cursor: pointer;
+}
