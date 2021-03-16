@@ -4,34 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Convocatorias</title>
+    <link rel="stylesheet" href="stylecall.css">
     <script src="https://kit.fontawesome.com/7a95506370.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
 
-    
 <header>
     <div class="logo">
         <a href="#">Github <span class="subtitle">jobs</span> </a>
     </div>
 </header>
 
-<div class="container-cabecera">
-    <div class="search">
-        <i class="fas fa-briefcase"></i>
-        <div class="items-search">
-            <form action="" id="userSearchForm">
-            <input class="search-banner" type="text" name="userSearch" id="userSearch" placeholder="  Title, companies, expertise or benefits">
-            <input class="botton" type="submit"  value="Search" id="btn-search">
-            </form> 
+<main>
+    <div class="container-cabecera">
+        <div class="search">
+            <i class="fas fa-briefcase"></i>
+            <div class="items-search">
+                <input class="search-banner" type="search"  placeholder="  Title, companies, expertise or benefits">
+                <input class="botton" type="submit"  value="Search">
+            </div>
         </div>
     </div>
-</div> 
 
-
-<main>
+    
     <div class="container-central">
 
         <!-- Espacio para definir parametros de busqueda -->
@@ -51,14 +47,10 @@
         </div>
 
         <!-- Espacio donde Aparecen los trabajos -->
-        <!-- <ul class="mainUl">
-        </ul> -->
-
-        <ul class="mainUl">
-            <li class="li">
+        <div class="calls">
             <div class="item-call">
                 <div class="logo-company">
-                    <img class="job-logo" src="img/FB_IMG_1595678035936.jpg" alt="" width="130px" height="130px">
+                    <img src="img/FB_IMG_1595678035936.jpg" alt="" width="130px" height="130px">
                 </div>
                 <div class="info-company-call">
                     <div class="info-call">
@@ -78,28 +70,38 @@
                     </div>
                 </div>
             </div>
-            </li>
-
-
-        </ul>
-
-
+        </div>
     </div>
 
 
 
 </main>
 
-<!--
-    <main>
-        <ul class="mainUl">
-        </ul>
-    </main> -->
 
 
+ <footer>
+    <div>
+        <p>Creador por <a href="#">Laura V. De Armas</a> Dev Challenge io></a></p>
+    </div>
+</footer> 
 
-    <script src="./index.js"></script>
+
+<script src="index.js"></script>
+
+
+<!-- // // Storie 4
+// const getData = async () => {
+//     try {
+//         const response = await fetch('http://localhost:8080/api/jobs')
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// getData() -->
 
 
 </body>
 </html>
+
+
+

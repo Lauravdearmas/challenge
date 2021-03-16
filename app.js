@@ -6,7 +6,7 @@ const app = express()
 const jobs = require("./jobs.json")
 
 
-app.use(express.json())
+// app.use(express.json())
 app.use(cors())
 
 

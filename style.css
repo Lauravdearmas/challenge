@@ -12,7 +12,6 @@ body {
 header {
     margin: 40px 150px;
 }
-
 .container-cabecera{
     margin: 5px 150px;
     background:khaki;
@@ -77,8 +76,6 @@ input.search-banner {
 
 }
 
-/* container central --------------------------------------------------------------------- */
-
 
 .container-central{
     margin: 5px 150px;
@@ -103,22 +100,22 @@ input.search-banner {
     height: 400px;
 }
 
-
-
-
-
-/* jobs list-------------------------- */
-.calls{
+ul {
+    padding: 0;
+}
+li{
     padding: 20px 0px 20px 20px;
     /* background: rgb(255, 207, 102); */
     width: 70%;
     margin-top: 20px;
-
+    list-style: none;
 }
+
 
 /* div padre de los jobs */
 .item-call{
     height: 150px;
+    width: 700px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
