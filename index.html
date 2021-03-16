@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convocatorias</title>
-    <link rel="stylesheet" href="calls.css">
+    <link rel="stylesheet" href="stylecall.css">
     <script src="https://kit.fontawesome.com/7a95506370.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <a href="#">Github jobs</a>
+        <a href="#">Github <span class="subtitle">jobs</span> </a>
     </div>
 </header>
 
@@ -21,7 +21,7 @@
         <div class="search">
             <i class="fas fa-briefcase"></i>
             <div class="items-search">
-                <input class="search-banner" type="search"  placeholder="Title, companies, expertise or benefits">
+                <input class="search-banner" type="search"  placeholder="  Title, companies, expertise or benefits">
                 <input class="botton" type="submit"  value="Search">
             </div>
         </div>
@@ -45,12 +45,31 @@
                 <label><input type="checkbox" id="cbox4" value="four_checkbox"> Berlin</label><br>
             </div>
         </div>
-        
+
         <!-- Espacio donde Aparecen los trabajos -->
         <div class="calls">
-
-            <!-- Tarjeta -->
-            
+            <div class="item-call">
+                <div class="logo-company">
+                    <img src="img/FB_IMG_1595678035936.jpg" alt="" width="130px" height="130px">
+                </div>
+                <div class="info-company-call">
+                    <div class="info-call">
+                        <h4>Kasisto</h4>
+                        <h2>Front-End Software Engineer</h2>
+                        <a href="#">Full time</a>
+                    </div>
+                    <div class="data-call">
+                        <div class="location">
+                            <i class="fas fa-globe-americas"></i>
+                            <p class="data-call">New York</p>
+                        </div>
+                        <div class="timeline">
+                            <i class="far fa-clock"></i>
+                            <p class="timeline">5 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -60,75 +79,25 @@
 
 
 
-<footer>
+ <footer>
     <div>
         <p>Creador por <a href="#">Laura V. De Armas</a> Dev Challenge io></a></p>
     </div>
-</footer>
+</footer> 
 
 
-
-<template>
-    <div class="item-call"> 
-        <div class="info-company-call">
-            <div class="logo-company">
-                <img src="" alt="">
-            </div>
-            <div class="info-call">
-                <h4>Kasisto</h4>
-                <h2>Front-End Software Engineer</h2>
-                <a href="#">Full time</a>
-            </div>
-        </div>
-        <div class="data-call">
-            <i class="fas fa-globe-americas"></i>
-            <div class="location">
-                <p>New York</p>
-            </div>
-            <div class="timeline">
-                <i class="far fa-clock"></i>
-                <p>5 days ago</p>
-            </div>
-        </div>
-    </div> 
-</template>
+<script src="index.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-
-const getData = async () => {
-    try {
-        const response = await fetch('http://localhost:8080/api/jobs')
-    } catch (error) {
-        console.log(error)
-    }
-}
-getData()
-
-
-
-</script>
+<!-- // // Storie 4
+// const getData = async () => {
+//     try {
+//         const response = await fetch('http://localhost:8080/api/jobs')
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// getData() -->
 
 
 </body>

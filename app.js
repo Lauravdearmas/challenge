@@ -1,15 +1,16 @@
 const express = require("express")
-// const morgan = require("morgan")
 const cors = require("cors")
-
 const app = express()
-app.use(express.json())
 
+
+const jobs = require("./jobs.json")
+
+
+app.use(express.json())
 app.use(cors())
 
 
 
-const jobs = require("./jobs")
 
 
 
@@ -53,12 +54,17 @@ app.get("/api/jobs/working/:type", (req, resp) =>{
     
 
 
- 
-    
 
 
-
-const PORT = 8080
+const PORT =  8080;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost: ${PORT}`)
 })
+
+
+// const fnSearchFullTime = (param) => {
+//     console.log("Param fn: "+param);
+//     if (param.type===jobs.type) {
+//         return param;
+//     }
+// }

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body {
+    background: rgb(245, 245, 245);
+    font-family: 'Rubik', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 40px 150px;
+}
+
+.container-cabecera{
+    margin: 5px 150px;
+    background:khaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 120px;
+
+}
+
+.search {
+    height: 45px;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 700px;
+    align-items: center;
+    border-radius: 5px;
+}
+.search i {
+    margin: 0 20px;
+    color: rgb(185, 185, 185);
+
+}
+.items-search {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    align-items: center;
+    background: white;
+}
+
+.botton {
+    width: 90px;
+    background: rgb(40, 104, 221);
+    height: 35px;
+    border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   margin-right: 5px;
+}
+
+input.search-banner {
+    width: 530px;
+    height: 40px;
+    border: none;
+    background: white;
+    color: rgb(189, 189, 189);
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.logo .subtitle {
+    font-weight: lighter;
+    color: rgb(71, 71, 71);
+
+}
+
+/* container central --------------------------------------------------------------------- */
+
+
+.container-central{
+    margin: 5px 150px;
+    background: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+/*container de parametros de busqueda */
+.parametros{
+    padding: 20px;
+    /* background:red; */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    width: 30%;
+    height: 400px;
+}
+
+
+
+
+
+/* jobs list-------------------------- */
+.calls{
+    padding: 20px 0px 20px 20px;
+    /* background: rgb(255, 207, 102); */
+    width: 70%;
+    margin-top: 20px;
+
+}
+
+/* div padre de los jobs */
+.item-call{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    background: white;
+}
+
+
+
+/* div de imagen */
+.logo-company{
+    width: 130px;
+    height: 130px;
+}
+
+.logo-company img{
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+
+
+/* div padre de textos  y tiempos del job */
+.info-company-call{
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* height: 150px; */
+    margin: 0 20px 0 25px;
+    /* background: cadetblue; */
+}
+
+
+/* hijo div titulos job */
+.info-call {
+    background: white;
+    width: 300px;
+    height: 120px;
+}
+
+/* nombre de la empresa */
+.info-call h4{
+    font-size: 15px;
+    color: rgb(20, 45, 126);
+    font-weight: bolder;
+}
+
+/* cargo del job */
+.info-call h2{
+    font-size: 18px;
+    color: rgb(20, 45, 126);
+    margin: 15px 0 17px 0;
+}
+
+/* modalidad job */
+.info-call a{
+    position: absolute;
+    text-decoration: none;
+    border: 1px solid  rgb(20, 45, 126);
+    font-size: 14px;
+    color: rgb(20, 45, 126);
+    font-weight: bolder;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/* padre del tiempo del job */
+.data-call {
+    /* background: cyan; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 200px;
+}
+
+
+.location {
+background: white;
+height: 50px;
+width: 50%;
+font-size: 12px;
+display: flex;
+align-items: flex-end;
+justify-content: flex-start;
+color: rgb(185, 185, 185);
+}
+
+.location i{
+    margin-right: 10px;
+    color: rgb(185, 185, 185);
+}
+
+.timeline {
+    background: white;
+    height: 50px;
+    width: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: rgb(185, 185, 185);
+}
+
+.timeline i{
+margin-right: 10px;
+color: rgb(185, 185, 185);
+}
