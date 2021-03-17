@@ -1,5 +1,29 @@
 const URL ="http://localhost:8080/api/jobs";
 const mainUl = document.querySelector(".mainUl");
+const bottonForm = document.querySelector("form");
+const searchInput = document.querySelector("#userSearch");
+const fullTime = document.querySelector("#btn-location");
+
+
+
+
+const searchData = (evt) => {
+
+    evt.preventDefault()
+    getPostFilter(searchInput.value)
+}
+
+
+const searchLocation = (evt) => {
+
+    evt.preventDefault()
+    getPostFilter(searchInput.value)
+}
+
+
+
+bottonForm.addEventListener("submit", searchData)
+
 
 
 const getPost = async() => {
@@ -13,11 +37,51 @@ const getPost = async() => {
         console.log(error);
     }
 }
-getPost();
+// getPost();
+
+
+
+const getPostFilter = async(param) => {
+    try {
+        const res = await fetch(`${URL}/filter/${param}`);
+        const jobs = await res.json();
+        console.log(typeof jobs);
+        if (jobs.length) {
+            jobs.forEach(job => {
+                displayUser(job);
+            });
+        }else{
+            alert("No se encontraron objetos con tu consulta");
+        } 
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+
+const getPostFilterWorking = async(param) => {
+    try {
+        const res = await fetch(`${URL}/working/${param}`);
+        const jobs = await res.json();
+        console.log(typeof jobs);
+        if (jobs.length) {
+            jobs.forEach(job => {
+                displayUser(job);
+            });
+        }else{
+            alert("No se encontraron objetos con tu consulta");
+        } 
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
 
 
 function displayUser(user){
-    console.log(user);
+    // console.log(user);
     const li = document.createElement("li");
     li.className="li";
     const divItemCall = document.createElement("div");
@@ -92,61 +156,3 @@ function displayUser(user){
 
 }
 
-
-
-
-
-
-
-// const getData= async()=>{
-//     try{
-//       const response = await fetch("http://localhost:8080/api/jobs");
-//       const data = await response.json();
-//     //   jobs.forEach(user =>{
-//         displayUser(job);
-//         // pintarJobs(data)
-//       }
-//     catch(error){
-//       console.log(error)
-//     }
-//   }
-//   getData();
-
-
-
-
-//   const getData = async () => {
-//         try {
-//             const resp = await fetch("http://localhost:8080/api/jobs");
-//             const data = await resp.json();
-//             //console.log(data);
-            // pintarJobs(data)
-//         }catch (error) {
-//             console.log(error)
-//         }
-//     }
-
-
-// const mainSection = document.querySelector(".mainSection");
-
-// function displayUser(job){
-//   const company_logo = job.company_logo;
-//   const company_name = job.company;
-//   const title = job.title;
-//   const time = job.type;
-
-//   const logo = document.createElement("img");
-// const name = document.createElement("h1");
-// const position = document.createElement("p")
-// const contract = document.createElement("p")
-// const div = document.createElement("div")
-
-// logo.heigth = "150"
-// logo.width = "150"
-// div.style.display = "flex"
-
-// logo.src = company_logo;
-// name.appendChild(document.createTextNode(company_name));
-// position.appendChild(document.createTextNode(title));
-// contract.appendChild(document.createTextNode(time));
-// }

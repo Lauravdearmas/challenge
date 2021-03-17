@@ -40,6 +40,17 @@ app.get("/api/jobs/detail/:description", (req, resp) =>{
             }
         })
 
+        app.get("/api/jobs/filter/:type", (req, resp) =>{ 
+            const  { type }  = req.params
+            const workingDay = jobs.filter(item => item.description.includes(type));
+            
+                if (workingDay) {
+                    resp.json(workingDay)
+                } else {
+                    resp.status(404).end()
+                }
+            })
+            
 
 app.get("/api/jobs/working/:type", (req, resp) =>{ 
     const  { type }  = req.params

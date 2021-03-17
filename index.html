@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7a95506370.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/7a95506370.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    
 
-    
+
 <header>
     <div class="logo">
         <a href="#">Github <span class="subtitle">jobs</span> </a>
     </div>
 </header>
 
+
 <div class="container-cabecera">
     <div class="search">
         <i class="fas fa-briefcase"></i>
         <div class="items-search">
-            <form action="" id="userSearchForm">
-            <input class="search-banner" type="text" name="userSearch" id="userSearch" placeholder="  Title, companies, expertise or benefits">
-            <input class="botton" type="submit"  value="Search" id="btn-search">
-            </form> 
+            <form  id="userSearchForm">
+            <input class="search-banner" type="text" name="userSearch" id="userSearch" placeholder="  Title, companies, expertise or benefits" style="text-transform:uppercase"
+            >
+            <button class="botton" id="btn-search">Search</button>
+            </form>
         </div>
     </div>
-</div> 
+</div>
 
 
 <main>
@@ -36,11 +37,17 @@
 
         <!-- Espacio para definir parametros de busqueda -->
         <div class="parametros">
+
             <label><input type="checkbox" id="mood-call" value="mood_checkbox">Full time</label>
+
+
             <h2>LOCATION</h2>
             <div class="location-search">
                 <i class="fas fa-globe-americas"></i>
-                <input type="search"  placeholder="City, state, zip code or country">
+                <input class="search-location" type="text"  id="btn-location" placeholder="City, state" style="text-transform:uppercase"
+            >
+              
+                
             </div>
             <div>
                 <label><input type="checkbox" id="cbox1" value="first_checkbox">London</label><br>
@@ -55,30 +62,7 @@
         </ul> -->
 
         <ul class="mainUl">
-            <li class="li">
-            <div class="item-call">
-                <div class="logo-company">
-                    <img class="job-logo" src="img/FB_IMG_1595678035936.jpg" alt="" width="130px" height="130px">
-                </div>
-                <div class="info-company-call">
-                    <div class="info-call">
-                        <h4>Kasisto</h4>
-                        <h2>Front-End Software Engineer</h2>
-                        <a href="#">Full time</a>
-                    </div>
-                    <div class="data-call">
-                        <div class="location">
-                            <i class="fas fa-globe-americas"></i>
-                            <p class="data-call">New York</p>
-                        </div>
-                        <div class="timeline">
-                            <i class="far fa-clock"></i>
-                            <p class="timeline">5 days ago</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </li>
+
 
 
         </ul>
